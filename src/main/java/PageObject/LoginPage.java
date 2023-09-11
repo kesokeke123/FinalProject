@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 
 
-public class loginPage {
+public class LoginPage {
     public SelenideElement
             AuthorizationButton = $(byText("შესვლა")),
             emailInput = $(byId("emailinp")),

@@ -3,16 +3,16 @@
 
     <test name="LoginPage" parallel="tests">
         <classes>
-            <class name="loginPageTest"/>
+            <class name="LoginPageTest"/>
         </classes>
     </test>
     <test name="Registration" parallel="tests">
         <classes>
-            <class name="registerPageTest"/>
+            <class name="RegisterPageTest"/>
         </classes>
     </test><test name="Product" parallel="tests">
     <classes>
-        <class name="productsPageTest"/>
+        <class name="ProductsPageTest"/>
     </classes>
 </test>
 

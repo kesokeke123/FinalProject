@@ -1,6 +1,6 @@
 package DataObject;
 
-public interface loginPageData {
+public interface LoginPageData {
     String
 
 

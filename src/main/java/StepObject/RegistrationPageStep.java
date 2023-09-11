@@ -1,59 +1,59 @@
 package StepObject;
 
-import PageObject.registrationPage;
+import PageObject.RegistrationPage;
 import io.qameta.allure.Step;
 
-public class registrationPageStep extends registrationPage {
+public class RegistrationPageStep extends RegistrationPage {
     @Step("ავტორიზაციის გვერძე გადასვლა")
-    public registrationPageStep goToRegistrationPage() {
+    public RegistrationPageStep goToRegistrationPage() {
         AuthorizationButton.click();
         return this;
 
     }
 
     @Step("რეგისტრაციის გვერძე გადასვლა")
-    public registrationPageStep clickRegistrationPageButton() {
+    public RegistrationPageStep clickRegistrationPageButton() {
         registrationPageButton.click();
         return this;
 
     }
 
     @Step("სახელის შევსება მნიშვნელობით: {firstName}")
-    public registrationPageStep fillFirstName(String firstName) {
+    public RegistrationPageStep fillFirstName(String firstName) {
         firstNameInput.setValue(firstName);
         return this;
 
     }
 
     @Step("გვარის შევსება მნიშვნელობით: {lastName}")
-    public registrationPageStep fillLastName(String lastName) {
+    public RegistrationPageStep fillLastName(String lastName) {
         lastNameInput.setValue(lastName);
         return this;
 
     }
 
     @Step("იმეილის შევსება მნიშვნელობით: {email}")
-    public registrationPageStep fillEmail(String email) {
+    public RegistrationPageStep fillEmail(String email) {
         emailInput.setValue(email);
         return this;
 
     }
 
     @Step("მობილურის ნომრის შევსება მნიშვნელობით: {phone}")
-    public registrationPageStep fillPhoneNumber(String phone) {
+    public RegistrationPageStep fillPhoneNumber(String phone) {
         phoneInput.setValue(phone);
         return this;
 
     }
 
     @Step("დაბადების მონაცემების შევსება მნიშვნელობით: {DateBirth}")
-    public registrationPageStep fillDateBirthInput(String DateBirth) {
+    public RegistrationPageStep fillDateBirthInput(String DateBirth) {
         DateBirthInput.setValue(DateBirth);
         return this;
     }
 
     @Step("სქესის შევსება მნიშვნელობით: {Gender}")
-    public registrationPageStep fillGenderInput(String Gender) {
+    public RegistrationPageStep fillGenderInput(String Gender) {
         GenderInput.selectOption(Gender);
         return this;
 
@@ -61,26 +61,26 @@ public class registrationPageStep extends registrationPage {
     }
 
     @Step("პაროლის შევსება მნიშვნელობით: {Password}")
-    public registrationPageStep fillPasswordInput(String Password) {
+    public RegistrationPageStep fillPasswordInput(String Password) {
         PasswordInput.setValue(Password);
         return this;
     }
 
     @Step(" გაიმეორე პაროლის შევსება მნიშვნელობით: {ConfirmPassword}")
-    public registrationPageStep fillConfirmPasswordInput(String ConfirmPassword) {
+    public RegistrationPageStep fillConfirmPasswordInput(String ConfirmPassword) {
         ConfirmPasswordInput.setValue(ConfirmPassword);
         return this;
     }
 
     @Step("ჩეკბოქსის მონიშვნა")
-    public registrationPageStep markTheCheckbox() {
+    public RegistrationPageStep markTheCheckbox() {
         Checkbox.click();
         return this;
 
     }
 
     @Step("რეგისტრაცია ღილაკზე დაკლიკება")
-    public registrationPageStep clickRegistrationbutton() {
+    public RegistrationPageStep clickRegistrationbutton() {
         registrationbutton.click();
         return this;
     }

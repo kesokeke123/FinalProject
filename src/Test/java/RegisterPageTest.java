@@ -1,4 +1,4 @@
-import StepObject.registrationPageStep;
+import StepObject.RegistrationPageStep;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -7,16 +7,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.ChromeRunner;
 
-import static DataObject.registrationPageData.*;
+import static DataObject.RegistrationPageData.*;
 
-public class registerPageTest extends ChromeRunner {
+public class RegisterPageTest extends ChromeRunner {
 
-    registrationPageStep registrationPageStep = new registrationPageStep();
+    RegistrationPageStep registrationPageStep = new RegistrationPageStep();
 
     @Test
     @Description(("წარუმატებელი რეგისტრაცია"))
     @Severity(SeverityLevel.BLOCKER)
-    public void registerPageIncorrectData() {
+    public void RegisterPageIncorrectData() {
         registrationPageStep.goToRegistrationPage()
                 .clickRegistrationPageButton()
                 .fillFirstName(FirstName)
@@ -37,7 +37,7 @@ public class registerPageTest extends ChromeRunner {
     @Test
     @Description(("მეილის მნიშვნელობის შედარება"))
     @Severity(SeverityLevel.NORMAL)
-    public void registerPageGetEmailData() {
+    public void RegisterPageGetEmailData() {
         registrationPageStep.goToRegistrationPage()
                 .clickRegistrationPageButton()
                 .fillFirstName(FirstName)
@@ -47,7 +47,7 @@ public class registerPageTest extends ChromeRunner {
                 .fillDateBirthInput(DateBirth)
                 .fillGenderInput(Gender)
                 .fillPasswordInput(Password)
-                .fillConfirmPasswordInput(ConfirmIncorrectPassword)
+                .fillConfirmPasswordInput(Password)
                 .markTheCheckbox()
                 .clickRegistrationbutton();
         Assert.assertEquals(registrationPageStep.emailInput.getValue(), Email, " მეილის ველის შემოწმება");

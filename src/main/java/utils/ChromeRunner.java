@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class ChromeRunner {
     @BeforeMethod(description = "ბრაუზერის გამართვა და გახსნა")
     public void setup() {
-        Configuration.browser = "edge";
         open("https://www.swoop.ge/");
         Configuration.browserSize = "1920x1080";
 

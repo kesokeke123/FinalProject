@@ -1,12 +1,12 @@
 package StepObject;
 
-import PageObject.loginPage;
+import PageObject.LoginPage;
 import io.qameta.allure.Step;
 
 
-public class loginPageStep extends loginPage {
+public class LoginPageStep extends LoginPage {
     @Step("ავტორიზაციის გვერძე გადასვლა")
-    public loginPageStep goToLoginPage() {
+    public LoginPageStep goToLoginPage() {
         AuthorizationButton.click();
         return this;
 
@@ -14,26 +14,26 @@ public class loginPageStep extends loginPage {
     }
 
     @Step("იმეილის შევსება მნიშვნელობით: {email}")
-    public loginPageStep fillemail(String email) {
+    public LoginPageStep fillemail(String email) {
         emailInput.setValue(email);
         return this;
 
     }
 
     @Step("პაროლის შევსება მნიშვნელობით: {password}")
-    public loginPageStep fillpassword(String password) {
+    public LoginPageStep fillpassword(String password) {
         correctpasswordInput.setValue(password);
         return this;
     }
 
     @Step(" ავტორიზაცია ღილაკზე დაკლიკება")
-    public loginPageStep authorizeloginpage() {
+    public LoginPageStep authorizeloginpage() {
         clickLoginButton.click();
         return this;
     }
 
     @Step("პროფილის გვერძე გადასვლა")
-    public loginPageStep myProfile() {
+    public LoginPageStep myProfile() {
         myProfile.click();
         return this;
 

@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 
 
-public class registrationPage {
+public class RegistrationPage {
     public SelenideElement
             AuthorizationButton = $(byText("შესვლა")),
             registrationPageButton = $(byClassName("ui-tabs-anchor"), 1),

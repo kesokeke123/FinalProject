@@ -1,6 +1,6 @@
 package DataObject;
 
-public interface registrationPageData {
+public interface RegistrationPageData {
     String
             FirstName = "კესო",
             LastName = "გავაშელიშვილი",
